@@ -1,0 +1,28 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "name": "surveyData",
+      "type": "cosmosDB",
+      "databaseName": "shared",
+      "collectionName": "survey-team0",
+      "createIfNotExists": true,
+      "connectionStringSetting": "COSMOSDB",
+      "direction": "out"
+    }
+  ]
+}
