@@ -5,9 +5,9 @@
     <body>
 
         <div class="container-sm">
-            <h1>Umfrage</h1>
+            <h1>Survey</h1>
     
-            <p>Bitte die folgende Umfrage ausfüllen, Danke!</p>
+            <p>Please fill out the following survey!</p>
     
             <form id="surveyForm" onsubmit="return onSubmit()">
                 <div class="mb-3">
@@ -20,7 +20,7 @@
                     <input type="text" class="form-control" id="lastname">
                 </div>
     
-                <button type="submit" class="btn btn-primary">Absenden</button>
+                <button type="submit" class="btn btn-primary">Send</button>
             </form>
         </div>
 
@@ -35,7 +35,7 @@
 
                 console.log(surveyData);
 
-                fetch('https://func-gastvortrag-serverless-team0.azurewebsites.net/api/registration', {
+                fetch('https://func-hs-serverless-team-00.azurewebsites.net/api/survey', {
                     method: 'POST',
                     body: JSON.stringify(surveyData)
                 })
