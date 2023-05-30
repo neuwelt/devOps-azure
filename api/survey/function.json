@@ -19,7 +19,7 @@
       "name": "surveyData",
       "type": "cosmosDB",
       "databaseName": "shared",
-      "collectionName": "survey-team0",
+      "collectionName": "survey-team-00",
       "createIfNotExists": true,
       "connectionStringSetting": "COSMOSDB",
       "direction": "out"
